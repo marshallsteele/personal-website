@@ -1,0 +1,192 @@
+/* Establish colour pallette for website */
+:root {
+    --gray0: #FFFFFF;
+    --gray1: #EFEFEF;
+    --gray2: #D0D0D0;
+    --gray3: #B8B8B8;
+    --gray4: #A7A7A7;
+    --gray5: #989898;
+    --gray6: #898989;
+    --gray7: #7D7D7D;
+    --gray8: #6F6F6F;
+    --gray9: #525252;
+    --gray10: #353535;
+    --gray11: #303030;
+    --gray12: #151515;
+    --gray13: #000000;
+    --accentGreen: #465F5A
+}
+
+/* Override default styling */
+
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    color: var(--gray1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+a {
+    color: var(--gray1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--gray0);
+}
+
+.accent-text {
+    color: var(--accentGreen)
+}
+
+/* General styling */
+.container-title {
+    margin: 15px;
+    font-size: 2vw;
+}
+
+/* Hero page styling */
+
+.hero-container {
+    min-height: 100vh;
+    background-color: var(--gray10);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact-container {
+    display: flex;
+    height: 10vh;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-name-grid-container {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-name-grid-block {
+    width: 50vw;
+    font-size: 6vw;
+    line-height: 4.5vw;
+}
+
+.rotating-text p {
+    margin: 0;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.rotating-word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.rotating-word .letter {
+    transform-origin: center center 25px;
+}
+
+.rotating-word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2)
+}
+
+.rotating-word .letter.in {
+    transition: 0.8s ease;
+}
+
+.rotating-word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+/* Education and Qualifications page styling */
+
+.education-qualification-container {
+    background-color: var(--gray11);
+    display: flex;
+    flex-direction: column;
+}
+
+.eq-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.eq-card {
+    padding:10px;
+    margin:10px;
+    width:20vw;
+    min-width: 200px;
+    border-radius:15px;
+    background-color: var(--gray10);
+    display: flex;
+    flex-direction: column;
+}
+
+.eq-card-img {
+    width: 100px;
+}
+
+/* Education and Qualifications page styling */
+
+.projects-container {
+    background-color: var(--gray10);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-carousel-container {
+    padding: 5vh 0 5vh 0;
+    min-height: 80vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.projects-carousel {
+    min-height: 80vh;
+    background-color: var(--gray9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-banner {
+    
+}
+
+.project-banner-img {
+
+}
+
+.project-banner-description-container {
+
+}
+
+.project-banner-name {
+
+}
+
+.project-banner-description {
+
+}
+
+.project-banner-tech-icon {
+
+}
