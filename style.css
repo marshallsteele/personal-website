@@ -146,19 +146,46 @@ a:hover {
 /* Education and Qualifications page styling */
 
 .projects-container {
+    min-height: 100vh;
     background-color: var(--gray10);
     display: flex;
     flex-direction: column;
 }
 
 .project-container {
-    padding: 10px;
+    padding: 10vh 20vw 10vh 20vw;
+}
+
+.project-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .project-title {
+    font-Size: xx-large;
+}
 
+.view-project-button {
+    appearance: none;
+    padding: 10px;
+    background: var(--accentGreen);
+    border: none;
+    border-radius: 10px;
+    font: inherit;
+    color: var(--gray1);
+    cursor: pointer;
+}
+
+.view-project-button:hover {
+    background-color: var(--gray1);
+    color: var(--accentGreen);
+}
+
+.view-project-button:hover a {
+    color: var(--accentGreen);
 }
 
 .project-description {
-
+    
 }
