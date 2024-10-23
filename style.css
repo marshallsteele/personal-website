@@ -155,7 +155,7 @@ a:hover {
 }
 
 .project-container {
-    padding: 0 10vw;
+    padding: 10vh 10vw;
 }
 
 .project-title-row {
@@ -192,8 +192,26 @@ a:hover {
     color: var(--accentGreen);
 }
 
-.project-description {
-    
+.project-summary-row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.project-summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-tools-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.project-image {
+    width: 40vw;
 }
 
 .icon {
@@ -201,4 +219,11 @@ a:hover {
     width: 2em;
     height: 2em;
     vertical-align: -0.25em;
+}
+
+.icon.tool {
+    fill: var(--accentGreen);
+    width: 4em;
+    height: 4em;
+    vertical-align: -0.5em;
 }
