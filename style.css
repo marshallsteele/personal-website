@@ -45,7 +45,7 @@ a:hover {
 
 /* General styling */
 .container-title {
-    margin: 15px;
+    margin: 15px 0;
     font-size: 2vw;
 }
 
@@ -147,7 +147,7 @@ a:hover {
 
 .projects-container {
     min-height: 90vh;
-    padding-bottom: 10vh;
+    padding: 0 10vw 10vh 10vw;
     background-color: var(--gray10);
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .project-container {
-    padding: 5vh 10vw;
+    padding: 5vh 0;
 }
 
 .project-title-row {
