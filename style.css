@@ -162,6 +162,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-height: 52px;
 }
 
 .project-title-container {
@@ -169,7 +170,7 @@ a:hover {
 }
 
 .project-title {
-    color: var(--gray0);
+    color: var(--gray1);
     font-Size: xx-large;
 }
 
@@ -211,6 +212,7 @@ a:hover {
 
 .project-summary-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 10px;
