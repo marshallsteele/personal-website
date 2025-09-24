@@ -161,6 +161,7 @@ a:hover {
 .project-title-row {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .project-title-container {
@@ -173,6 +174,7 @@ a:hover {
 
 .view-project-button {
     appearance: none;
+    height: fit-content;
     padding: 10px;
     margin: 0px 5px;
     background: var(--accentGreen);
@@ -193,25 +195,46 @@ a:hover {
 }
 
 .project-summary-row {
+    padding: 20px 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 25px;
+}
+
+@media screen and (max-width: 850px) {
+    .project-summary-row {
+        flex-direction: column;
+    }
 }
 
 .project-summary-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 .project-tools-container {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .project-image {
     width: 40vw;
+}
+
+@media screen and (max-width: 850px) {
+    .project-image {
+        width: 100%;
+    }
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
 }
 
 .icon {
@@ -226,4 +249,24 @@ a:hover {
     width: 4em;
     height: 4em;
     vertical-align: -0.5em;
+    cursor: pointer;
+}
+
+.icon-container:hover .icon-tooltiptext {
+  visibility: visible;
+}
+
+.icon-tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  background-color: var(--accentGreen);
+  color:var(--gray0);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
