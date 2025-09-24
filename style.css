@@ -169,6 +169,7 @@ a:hover {
 }
 
 .project-title {
+    color: var(--gray0);
     font-Size: xx-large;
 }
 
